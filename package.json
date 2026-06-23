@@ -1,0 +1,16 @@
+{
+  "name": "gh-actions-e2e-tests",
+  "version": "1.0.0",
+  "description": "Example Repo for reusable workflow with Cypress standard setup",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "cypress run"
+  },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "15.17.0"
+  }
+}
