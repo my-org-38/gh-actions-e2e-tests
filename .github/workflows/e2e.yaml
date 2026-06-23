@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6 
+        with:
+          repository: my-org-38/gh-actions-e2e-tests
+          ref: main
       - name: Setup Node
         id: setup
         uses: actions/setup-node@v6 
