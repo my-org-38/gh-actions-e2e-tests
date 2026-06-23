@@ -1,0 +1,21 @@
+name: E2E Test
+
+on:
+  workflow_dispatch: 
+
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6 
+      - name: Setup Node
+        id: setup
+        uses: actions/setup-node@v6 
+        with:
+          node-version: '24.x'
+      - name: Install deps
+        id: node-deps
+        run: npm ci
+      - name: E2E Tests
+        id: tests
+        run: npm run test:e2e
