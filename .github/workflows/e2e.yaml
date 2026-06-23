@@ -23,6 +23,8 @@ jobs:
         with:
           client-id: ${{ inputs.CLIENT_ID || vars.CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: my-org-38
+          repositories: gh-actions-e2e-tests
       
       - name: Print Output token
         run: |
