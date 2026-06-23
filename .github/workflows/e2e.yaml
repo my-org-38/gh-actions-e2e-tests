@@ -17,9 +17,6 @@ jobs:
         with:
           client-id: ${{ vars.CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
-          permission-organization-secrets: read
-          permission-contents: read
-          permission-secrets: read
       - uses: actions/checkout@v6 
         with:
           repository: my-org-38/gh-actions-e2e-tests
